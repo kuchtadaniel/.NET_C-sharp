@@ -18,7 +18,7 @@ Dapper is a lightweight Object-Relational Mapping (ORM) library for .NET, design
 ## 1. Introduction to Dapper
 Dapper is a micro-ORM that works with various database providers. It is well-known for its performance due to its lightweight design and raw SQL execution capabilities. It simplifies the process of querying a database while providing control over the SQL statements being executed.
 
-## 2. Setting Up Your Project
+### 2. Setting Up Your Project
 - Create a new .NET C# project in your preferred development environment.
 - Install the Dapper package using NuGet Package Manager:
   ```bash
