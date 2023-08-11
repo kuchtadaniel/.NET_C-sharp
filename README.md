@@ -18,6 +18,7 @@ Dapper is a lightweight Object-Relational Mapping (ORM) library for .NET, design
 1. ## Introduction to Dapper
 Dapper is a micro-ORM that works with various database providers. It is well-known for its performance due to its lightweight design and raw SQL execution capabilities. It simplifies the process of querying a database while providing control over the SQL statements being executed.
  **[⬆ Back to Top](#table-of-contents)**
+ 
 2. ## Setting Up Your Project
 - Create a new .NET C# project in your preferred development environment.
 - Install the Dapper package using NuGet Package Manager:
@@ -25,6 +26,7 @@ Dapper is a micro-ORM that works with various database providers. It is well-kno
   Install-Package Dapper
   ```
  **[⬆ Back to Top](#table-of-contents)**
+ 
 3. ## Basic CRUD Operations
 ### 3.1 Connecting to the Database
 ```csharp
@@ -60,6 +62,7 @@ string deleteQuery = "DELETE FROM Products WHERE Id = @Id";
 connection.Execute(deleteQuery, new { Id = 1 });
 ```
  **[⬆ Back to Top](#table-of-contents)**
+ 
 4. ## Advanced Querying
 ### 4.1 Parameterized Queries
 ```csharp
@@ -77,6 +80,7 @@ using (var multiResult = connection.QueryMultiple(multiQuery))
 }
 ```
  **[⬆ Back to Top](#table-of-contents)**
+ 
 5. ## Mapping Relationships
 Dapper supports one-to-one and one-to-many relationships using the `Query` and `Query` methods respectively.
 
@@ -96,11 +100,13 @@ using (var transaction = connection.BeginTransaction())
 }
 ```
  **[⬆ Back to Top](#table-of-contents)**
+ 
 7. ## Performance Optimization
 - Use async methods for asynchronous database operations.
 - Enable query caching for frequently used queries.
 - Pay attention to the performance impact of loading related entities.
  **[⬆ Back to Top](#table-of-contents)**
+  
 8. ## Handling Stored Procedures
 ```csharp
 string spName = "InsertProduct";
@@ -108,19 +114,23 @@ var parameters = new { Name = "New Product", Price = 19.99 };
 connection.Execute(spName, parameters, commandType: CommandType.StoredProcedure);
 ```
  **[⬆ Back to Top](#table-of-contents)**
+ 
 9. ## Async Programming with Dapper
 Dapper provides async methods to perform database operations asynchronously. Use `ExecuteAsync`, `QueryAsync`, and `QueryMultipleAsync` for asynchronous programming.
  **[⬆ Back to Top](#table-of-contents)**
+ 
 10. ## Best Practices and Tips
 - Keep your SQL queries maintainable and organized.
 - Use parameterized queries to prevent SQL injection.
 - Consider separating database access logic from business logic using repositories or services.
  **[⬆ Back to Top](#table-of-contents)**
+  
 11. ## Additional Resources
 - Dapper GitHub Repository: [https://github.com/DapperLib/Dapper](https://github.com/DapperLib/Dapper)
 - Dapper Documentation: [https://dapper-tutorial.net/dapper](https://dapper-tutorial.net/dapper)
 - Dapper Performance Comparison: [https://dapper-tutorial.net/performance](https://dapper-tutorial.net/performance)
  **[⬆ Back to Top](#table-of-contents)**
+  
 This comprehensive guide covers the basics of Dapper and provides insights into advanced topics. Remember that practice is key to mastering any technology, so make sure to experiment with various scenarios and use cases to solidify your understanding of Dapper in .NET C#. Happy coding!
 ```
 
