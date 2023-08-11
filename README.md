@@ -133,5 +133,3 @@ Dapper provides async methods to perform database operations asynchronously. Use
   
 This comprehensive guide covers the basics of Dapper and provides insights into advanced topics. Remember that practice is key to mastering any technology, so make sure to experiment with various scenarios and use cases to solidify your understanding of Dapper in .NET C#. Happy coding!
 ```
-
-You can copy and paste this content into your `README.md` file on GitHub. Make sure to replace placeholders like `your_connection_string_here` with your actual database connection string, and adapt the code examples as needed for your project.
