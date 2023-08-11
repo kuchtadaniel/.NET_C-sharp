@@ -27,13 +27,13 @@ Dapper is a micro-ORM that works with various database providers. It is well-kno
 
 ## 3. Basic CRUD Operations
 ### 3.1 Connecting to the Database
-```csharp
+
 using System.Data.SqlClient;
 using Dapper;
 
 string connectionString = "your_connection_string_here";
 SqlConnection connection = new SqlConnection(connectionString);
-```
+
 
 ### 3.2 Inserting Data
 ```csharp
@@ -43,10 +43,10 @@ connection.Execute(insertQuery, newProduct);
 ```
 
 ### 3.3 Querying Data
-```csharp
+
 string selectQuery = "SELECT * FROM Products";
 List<Product> products = connection.Query<Product>(selectQuery).ToList();
-```
+
  **[⬆ Back to Top](#table-of-contents)**
 
 ### 3.4 Updating Data
