@@ -137,18 +137,21 @@ When you execute the code you provided, Dapper will pass the values "New Product
  
 9. ## Async Programming with Dapper
 Dapper provides async methods to perform database operations asynchronously. Use `ExecuteAsync`, `QueryAsync`, and `QueryMultipleAsync` for asynchronous programming.
+
  **[⬆ Back to Top](#table-of-contents)**
  
 10. ## Best Practices and Tips
 - Keep your SQL queries maintainable and organized.
 - Use parameterized queries to prevent SQL injection.
 - Consider separating database access logic from business logic using repositories or services.
+  
  **[⬆ Back to Top](#table-of-contents)**
   
 11. ## Additional Resources
 - Dapper GitHub Repository: [https://github.com/DapperLib/Dapper](https://github.com/DapperLib/Dapper)
 - Dapper Documentation: [https://dapper-tutorial.net/dapper](https://dapper-tutorial.net/dapper)
 - Dapper Performance Comparison: [https://dapper-tutorial.net/performance](https://dapper-tutorial.net/performance)
+- 
  **[⬆ Back to Top](#table-of-contents)**
   
 This comprehensive guide covers the basics of Dapper and provides insights into advanced topics. Remember that practice is key to mastering any technology, so make sure to experiment with various scenarios and use cases to solidify your understanding of Dapper in .NET C#. Happy coding!
