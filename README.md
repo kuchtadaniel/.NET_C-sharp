@@ -3,19 +3,19 @@
 Dapper is a lightweight Object-Relational Mapping (ORM) library for .NET, designed to make database interactions faster and more efficient while maintaining simplicity. This guide provides a step-by-step tutorial to learn everything about using Dapper with .NET C# for database access.
 
 ## Table of Contents
-1. [Introduction to Dapper](#introduction-to-dapper)|
-2. [Setting Up Your Project](#setting-up-your-project)|
-3. [Basic CRUD Operations](#basic-crud-operations)|
-4. [Advanced Querying](#advanced-querying)|
-5. [Mapping Relationships](#mapping-relationships)|
-6. [Transactions and Bulk Operations](#transactions-and-bulk-operations)|
-7. [Performance Optimization](#performance-optimization)|
-8. [Handling Stored Procedures](#handling-stored-procedures)|
-9. [Async Programming with Dapper](#async-programming-with-dapper)|
-10. [Best Practices and Tips](#best-practices-and-tips)|
-11. [Additional Resources](#additional-resources)|
+1. [Introduction to Dapper](#introduction-to-dapper)
+2. [Setting Up Your Project](#setting-up-your-project)
+3. [Basic CRUD Operations](#basic-crud-operations)
+4. [Advanced Querying](#advanced-querying)
+5. [Mapping Relationships](#mapping-relationships)
+6. [Transactions and Bulk Operations](#transactions-and-bulk-operations)
+7. [Performance Optimization](#performance-optimization)
+8. [Handling Stored Procedures](#handling-stored-procedures)
+9. [Async Programming with Dapper](#async-programming-with-dapper)
+10. [Best Practices and Tips](#best-practices-and-tips)
+11. [Additional Resources](#additional-resources)
 
-## 1. Introduction to Dapper
+1. ## Introduction to Dapper
 Dapper is a micro-ORM that works with various database providers. It is well-known for its performance due to its lightweight design and raw SQL execution capabilities. It simplifies the process of querying a database while providing control over the SQL statements being executed.
  **[⬆ Back to Top](#table-of-contents)**
 ## 2. Setting Up Your Project
@@ -25,7 +25,7 @@ Dapper is a micro-ORM that works with various database providers. It is well-kno
   Install-Package Dapper
   ```
  **[⬆ Back to Top](#table-of-contents)**
-## 3. Basic CRUD Operations
+ 3. ## Basic CRUD Operations
 ### 3.1 Connecting to the Database
 ```csharp
 using System.Data.SqlClient;
