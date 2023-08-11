@@ -21,9 +21,9 @@ Dapper is a micro-ORM that works with various database providers. It is well-kno
 ### 2. Setting Up Your Project
 - Create a new .NET C# project in your preferred development environment.
 - Install the Dapper package using NuGet Package Manager:
-  ```bash
+
   Install-Package Dapper
-  ```
+
 
 ## 3. Basic CRUD Operations
 ### 3.1 Connecting to the Database
@@ -36,11 +36,11 @@ SqlConnection connection = new SqlConnection(connectionString);
 
 
 ### 3.2 Inserting Data
-```csharp
+
 var newProduct = new Product { Name = "Sample Product", Price = 9.99 };
 string insertQuery = "INSERT INTO Products (Name, Price) VALUES (@Name, @Price)";
 connection.Execute(insertQuery, newProduct);
-```
+
 
 ### 3.3 Querying Data
 
@@ -50,10 +50,10 @@ List<Product> products = connection.Query<Product>(selectQuery).ToList();
  **[⬆ Back to Top](#table-of-contents)**
 
 ### 3.4 Updating Data
-```csharp
+
 string updateQuery = "UPDATE Products SET Price = @Price WHERE Id = @Id";
 connection.Execute(updateQuery, new { Price = 14.99, Id = 1 });
-```
+
 
 ### 3.5 Deleting Data
 ```csharp
