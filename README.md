@@ -1,6 +1,3 @@
-Absolutely, here's the content formatted for a GitHub `README.md` file:
-
-```markdown
 # Comprehensive Guide to Using Dapper with .NET C#
 
 Dapper is a lightweight Object-Relational Mapping (ORM) library for .NET, designed to make database interactions faster and more efficient while maintaining simplicity. This guide provides a step-by-step tutorial to learn everything about using Dapper with .NET C# for database access.
