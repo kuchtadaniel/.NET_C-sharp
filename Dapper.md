@@ -51,7 +51,11 @@ connection.Execute(insertQuery, newProduct);
 ```csharp
 string selectQuery = "SELECT * FROM Products";
 List<Product> products = connection.Query<Product>(selectQuery).ToList();
+//OR
+IEnumerable<Product> expensiveProducts = connection.Query<Product>(query, new { Price = 10 });
 ```
+By changing the variable type to IEnumerable<Product>, you are using a more general type that represents a sequence of Product objects. This allows for more flexibility, as you're not tied to a specific collection type like List. Keep in mind that IEnumerable is a base interface for various collections, so it might not have all the methods available that you'd find in more specific collection types like List.
+
 
 ##### 3.4 Updating Data
 ```csharp
