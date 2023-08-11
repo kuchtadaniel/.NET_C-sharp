@@ -6,7 +6,7 @@ Dapper is a lightweight Object-Relational Mapping (ORM) library for .NET, design
 1. [Introduction to Dapper](#introduction-to-dapper)
 2. [Setting Up Your Project](#setting-up-your-project)
 3. [Basic CRUD Operations](#basic-crud-operations)
-4. [Methods Basic CRUD Operations](#methods)
+4. [Methods](#methods)
 5. [Advanced Querying](#advanced-querying)
 6. [Mapping Relationships](#mapping-relationships)
 7. [Transactions and Bulk Operations](#transactions-and-bulk-operations)
