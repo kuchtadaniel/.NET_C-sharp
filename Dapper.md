@@ -120,6 +120,19 @@ string spName = "InsertProduct";
 var parameters = new { Name = "New Product", Price = 19.99 };
 connection.Execute(spName, parameters, commandType: CommandType.StoredProcedure);
 ```
+This would be the sample stored procedure
+```sql
+CREATE PROCEDURE InsertProduct
+    @Name NVARCHAR(255),
+    @Price DECIMAL(18, 2)
+AS
+BEGIN
+    INSERT INTO Products (Name, Price)
+    VALUES (@Name, @Price)
+END
+```
+When you execute the code you provided, Dapper will pass the values "New Product" and 19.99 to the stored procedure's parameters, and the stored procedure will insert a new row into the "Products" table with the provided values.
+
  **[⬆ Back to Top](#table-of-contents)**
  
 9. ## Async Programming with Dapper
