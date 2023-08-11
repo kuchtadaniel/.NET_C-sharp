@@ -47,6 +47,7 @@ connection.Execute(insertQuery, newProduct);
 string selectQuery = "SELECT * FROM Products";
 List<Product> products = connection.Query<Product>(selectQuery).ToList();
 ```
+ **[⬆ Back to Top](#table-of-contents)**
 
 ### 3.4 Updating Data
 ```csharp
