@@ -15,6 +15,9 @@ Dapper is a lightweight Object-Relational Mapping (ORM) library for .NET, design
 10. [Best Practices and Tips](#best-practices-and-tips)
 11. [Additional Resources](#additional-resources)
 
+ **[](#table-of-contents)**
+
+
 1. ## Introduction to Dapper
 Dapper is a micro-ORM that works with various database providers. It is well-known for its performance due to its lightweight design and raw SQL execution capabilities. It simplifies the process of querying a database while providing control over the SQL statements being executed.
  **[⬆ Back to Top](#table-of-contents)**
@@ -28,7 +31,7 @@ Dapper is a micro-ORM that works with various database providers. It is well-kno
  **[⬆ Back to Top](#table-of-contents)**
  
 3. ## Basic CRUD Operations
-### 3.1 Connecting to the Database
+##### 3.1 Connecting to the Database
 ```csharp
 using System.Data.SqlClient;
 using Dapper;
@@ -37,26 +40,26 @@ string connectionString = "your_connection_string_here";
 SqlConnection connection = new SqlConnection(connectionString);
 ```
 
-### 3.2 Inserting Data
+##### 3.2 Inserting Data
 ```csharp
 var newProduct = new Product { Name = "Sample Product", Price = 9.99 };
 string insertQuery = "INSERT INTO Products (Name, Price) VALUES (@Name, @Price)";
 connection.Execute(insertQuery, newProduct);
 ```
 
-### 3.3 Querying Data
+##### 3.3 Querying Data
 ```csharp
 string selectQuery = "SELECT * FROM Products";
 List<Product> products = connection.Query<Product>(selectQuery).ToList();
 ```
 
-### 3.4 Updating Data
+##### 3.4 Updating Data
 ```csharp
 string updateQuery = "UPDATE Products SET Price = @Price WHERE Id = @Id";
 connection.Execute(updateQuery, new { Price = 14.99, Id = 1 });
 ```
 
-### 3.5 Deleting Data
+##### 3.5 Deleting Data
 ```csharp
 string deleteQuery = "DELETE FROM Products WHERE Id = @Id";
 connection.Execute(deleteQuery, new { Id = 1 });
@@ -64,13 +67,13 @@ connection.Execute(deleteQuery, new { Id = 1 });
  **[⬆ Back to Top](#table-of-contents)**
  
 4. ## Advanced Querying
-### 4.1 Parameterized Queries
+##### 4.1 Parameterized Queries
 ```csharp
 string query = "SELECT * FROM Products WHERE Price > @Price";
 List<Product> expensiveProducts = connection.Query<Product>(query, new { Price = 10 }).ToList();
 ```
 
-### 4.2 Query Multiple Result Sets
+##### 4.2 Query Multiple Result Sets
 ```csharp
 string multiQuery = "SELECT * FROM Customers; SELECT * FROM Orders;";
 using (var multiResult = connection.QueryMultiple(multiQuery))
