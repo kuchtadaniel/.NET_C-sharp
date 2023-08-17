@@ -7,7 +7,7 @@
 - [.NET Web API](#net-web-api)
 - [Load Balancing and Caching Strategies](#load-balancing-and-caching-strategies)
 - [Sarbanes-Oxley SOX Compliance](#sarbanes-oxley-sox-compliance)
-- [Separation of Concerns (SoC)](#separation-of-concerns-(soc))
+- [Separation of Concerns (SoC)](#separation-of-concerns-soc)
 
   **[](#table-of-contents)**
 
@@ -317,7 +317,7 @@ Understanding and implementing Sarbanes-Oxley compliance measures in .NET applic
  **[⬆ Back to Top](#table-of-contents)**
 
 
- ## Separation of Concerns (SoC) 
+ ## Separation of Concerns SoC 
 
 ## What is Separation of Concerns in .NET Applications?
 
