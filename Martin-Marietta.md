@@ -3,7 +3,7 @@
 
 ## Table of Contents
 - [Authentication](#authentication)
-- [Authorization](#authorization)
+- [JSON](#json)
 - [Applying Authorization to Controllers and Actions](#applying-authorization-to-controllers-and-actions)
 - [Checking User Roles in Views](#checking-user-roles-in-views)
 
@@ -86,6 +86,37 @@ else
     <p>Please log in to access this content.</p>
 }
 ```
-```
 
-Just copy and paste this content into a .md file on GitHub or any Markdown editor to see the formatted output.
+
+ **[⬆ Back to Top](#table-of-contents)**
+ 
+## JSON
+
+**JSON (JavaScript Object Notation) in Brief:**
+
+JSON is a lightweight format for sharing data between systems. It's easy for both humans and computers to grasp. Here's the lowdown:
+
+- **Structure:** JSON uses key-value pairs, like a dictionary. Values can be strings, numbers, objects, arrays, booleans, or null.
+- **Example:**
+  ```json
+  {
+    "name": "John",
+    "age": 30,
+    "isStudent": false,
+    "grades": [90, 85, 78]
+  }
+  ```
+- **Advantages:** JSON is simple, lightweight, and well-supported in programming languages. It's perfect for web APIs and data sharing.
+- **Usage:** It's used in web development for AJAX requests, configuration files, and more.
+- **Parsing:** Languages provide tools to easily convert JSON to usable data. In JavaScript:
+  ```javascript
+  const jsonString = '{"name": "John", "age": 30}';
+  const parsedData = JSON.parse(jsonString);
+  console.log(parsedData.name); // Output: John
+  ```
+- **Security:** JSON itself doesn't handle security; applications need to ensure data safety.
+- **Key Difference from XML:** JSON is lighter, simpler, and often preferred for modern applications.
+
+In summary, JSON is a popular format for sharing and storing data in web development and beyond.
+
+ **[⬆ Back to Top](#table-of-contents)**
