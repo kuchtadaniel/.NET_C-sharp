@@ -4,7 +4,7 @@
 ## Table of Contents
 - [Authentication](#authentication)
 - [JSON](#json)
-- [.NET Web API](#.net-web-api)
+- [.NET Web API](#net-web-api)
 - [Checking User Roles in Views](#checking-user-roles-in-views)
 
   **[](#table-of-contents)**
@@ -121,7 +121,7 @@ In summary, JSON is a popular format for sharing and storing data in web develop
 
  **[⬆ Back to Top](#table-of-contents)**
 
- # .NET Web API
+ ## NET Web API
 
 ## Basics
 
