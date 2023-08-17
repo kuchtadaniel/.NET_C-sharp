@@ -1,6 +1,4 @@
-Sure, here's your example converted into a GitHub Markdown (.md) file format with a table of contents:
 
-```markdown
 # Example: User Authentication and Authorization in ASP.NET Core
 
 ## Table of Contents
@@ -8,6 +6,8 @@ Sure, here's your example converted into a GitHub Markdown (.md) file format wit
 - [Authorization](#authorization)
 - [Applying Authorization to Controllers and Actions](#applying-authorization-to-controllers-and-actions)
 - [Checking User Roles in Views](#checking-user-roles-in-views)
+
+  **[](#table-of-contents)**
 
 ## Authentication
 Authentication is the process of verifying the identity of a user. In this example, we'll use a simple username-password authentication approach.
