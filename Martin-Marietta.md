@@ -1,11 +1,18 @@
-Example: User Authentication and Authorization in ASP.NET Core
+Sure, here's your example converted into a GitHub Markdown (.md) file format with a table of contents:
 
-Suppose you are building a web application where users need to log in to access certain resources, and only authorized users should have access to specific features.
+```markdown
+# Example: User Authentication and Authorization in ASP.NET Core
 
-Authentication:
+## Table of Contents
+- [Authentication](#authentication)
+- [Authorization](#authorization)
+- [Applying Authorization to Controllers and Actions](#applying-authorization-to-controllers-and-actions)
+- [Checking User Roles in Views](#checking-user-roles-in-views)
+
+## Authentication
 Authentication is the process of verifying the identity of a user. In this example, we'll use a simple username-password authentication approach.
-csharp
-Copy code
+
+```csharp
 // Startup.cs
 public void ConfigureServices(IServiceCollection services)
 {
@@ -16,10 +23,12 @@ public void ConfigureServices(IServiceCollection services)
             options.LoginPath = "/Account/Login"; // Redirect to login page if not authenticated
         });
 }
-Authorization:
+```
+
+## Authorization
 Authorization determines what actions or resources a user is allowed to access based on their role or permissions.
-csharp
-Copy code
+
+```csharp
 // Startup.cs
 public void ConfigureServices(IServiceCollection services)
 {
@@ -32,10 +41,12 @@ public void ConfigureServices(IServiceCollection services)
             policy.RequireRole("Admin")); // Example: Only users with "Admin" role can access
     });
 }
-Applying Authorization to Controllers and Actions:
+```
+
+## Applying Authorization to Controllers and Actions
 Apply authorization rules to controllers or actions using attributes.
-csharp
-Copy code
+
+```csharp
 // UserController.cs
 [Authorize] // Requires authentication to access any action in this controller
 public class UserController : Controller
@@ -51,10 +62,12 @@ public class UserController : Controller
         return View();
     }
 }
-Checking User Roles in Views:
+```
+
+## Checking User Roles in Views
 In your Razor views, you can conditionally render content based on user roles.
-html
-Copy code
+
+```html
 @using Microsoft.AspNetCore.Authorization
 
 @if (User.Identity.IsAuthenticated)
@@ -72,3 +85,7 @@ else
 {
     <p>Please log in to access this content.</p>
 }
+```
+```
+
+Just copy and paste this content into a .md file on GitHub or any Markdown editor to see the formatted output.
