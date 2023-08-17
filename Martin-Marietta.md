@@ -8,6 +8,7 @@
 - [Load Balancing and Caching Strategies](#load-balancing-and-caching-strategies)
 - [Sarbanes-Oxley SOX Compliance](#sarbanes-oxley-sox-compliance)
 - [Separation of Concerns (SoC)](#separation-of-concerns-soc)
+- [Required Qualifications and Skills](#required-qualifications-and-skills)
 
   **[](#table-of-contents)**
 
@@ -379,3 +380,82 @@ Applying the Separation of Concerns principle in .NET applications results in cl
 
  **[⬆ Back to Top](#table-of-contents)**
 
+## Required Qualifications and Skills
+
+### .NET C#
+1. **CLR in .NET Framework:** The Common Language Runtime (CLR) manages runtime services in .NET. It compiles Intermediate Language (IL) to machine code and provides memory management and exception handling.
+
+2. **Value Types vs. Reference Types:** Value types store data directly, while reference types store references. Value types include `int` and `bool`, while classes are reference types.
+
+3. **Handling Exceptions:** Exceptions are runtime errors. We use `try-catch` blocks to handle them. For instance:
+   ```csharp
+   try
+   {
+       // Code that might throw an exception
+   }
+   catch (Exception ex)
+   {
+       Console.WriteLine($"An error occurred: {ex.Message}");
+   }
+   ```
+
+### Writing RESTful Web Services
+1. **REST Principles:** REST follows principles like statelessness and uniform interfaces. It uses HTTP methods to interact with resources.
+
+2. **GET vs. POST:** GET retrieves data, POST sends data. GET is idempotent, POST is not.
+
+3. **Pagination:** Use query parameters like `page` and `pageSize` to implement pagination.
+
+### Angular
+1. **Angular Components:** Components encapsulate UI elements. They consist of templates, styles, and logic.
+
+2. **Two-Way Data Binding:** Data binding updates both view and model. Example: `[(ngModel)]` in forms.
+
+3. **HTTP Requests with HttpClient:** Use `HttpClient` for requests. Example:
+   ```typescript
+   import { HttpClient } from '@angular/common/http';
+
+   constructor(private http: HttpClient) {}
+
+   fetchData() {
+       this.http.get('https://api.example.com/data').subscribe(response => {
+           console.log(response);
+       });
+   }
+   ```
+
+### JavaScript
+1. **`let`, `const`, and `var`:** `let` and `const` are block-scoped and allow reassignment. `var` is function-scoped and allows redeclaration and reassignment.
+
+2. **Asynchronous Programming:** Promises and `async/await` handle asynchronous operations.
+
+3. **Closures:** A closure allows a function to access variables from its containing function, even after it finishes. Example:
+   ```javascript
+   function outer() {
+       const outerVar = 'I am outer';
+       function inner() {
+           console.log(outerVar);
+       }
+       return inner;
+   }
+   const innerFunc = outer();
+   innerFunc(); // Outputs: I am outer
+   ```
+
+### Oracle and/or Microsoft SQL Server
+1. **Normalization:** It reduces data redundancy and improves integrity. It divides tables into smaller related tables.
+
+2. **JOIN Types:** INNER JOIN returns matching rows, LEFT JOIN returns all left rows and matching right rows, RIGHT JOIN is similar but from the right's perspective.
+
+3. **Optimizing SQL Queries:** Create indexes, avoid `SELECT *`, optimize subqueries. Example: use `EXPLAIN` for query analysis.
+
+### Git
+1. **Version Control Purpose:** Git tracks changes, enabling collaboration and preserving code history.
+
+2. **Git Workflow:** Developers create branches for features, push changes, and create pull requests for review and merging.
+
+3. **Merge Conflicts:** Conflicts arise when Git can't merge changes automatically. Resolve by manually editing code and committing.
+
+
+
+ **[⬆ Back to Top](#table-of-contents)**
