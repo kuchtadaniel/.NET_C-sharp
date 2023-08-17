@@ -4,7 +4,7 @@
 ## Table of Contents
 - [Authentication](#authentication)
 - [JSON](#json)
-- [Applying Authorization to Controllers and Actions](#applying-authorization-to-controllers-and-actions)
+- [.NET Web API](#.net-web-api)
 - [Checking User Roles in Views](#checking-user-roles-in-views)
 
   **[](#table-of-contents)**
@@ -118,5 +118,93 @@ JSON is a lightweight format for sharing data between systems. It's easy for bot
 - **Key Difference from XML:** JSON is lighter, simpler, and often preferred for modern applications.
 
 In summary, JSON is a popular format for sharing and storing data in web development and beyond.
+
+ **[⬆ Back to Top](#table-of-contents)**
+
+ # .NET Web API
+
+## Basics
+
+### What is .NET Web API?
+.NET Web API is a framework for building HTTP services that can be consumed by various clients, such as web applications and mobile apps.
+
+### Advantages of .NET Web API
+- Allows creating RESTful APIs.
+- Supports various formats like JSON and XML for data exchange.
+- Built-in support for content negotiation.
+
+### Key Components
+- Controllers: Handle incoming HTTP requests and generate responses.
+- Routes: Define how URLs map to controller actions.
+- Models: Represent data structures used by the API.
+
+## Creating a Basic Web API
+
+### Create a Controller
+- Add a new controller class that inherits from `ApiController`.
+- Define action methods to handle HTTP requests (GET, POST, PUT, DELETE).
+
+### Routing
+- Configure routes in `WebApiConfig` to map URLs to controller actions.
+- Use attributes like `[Route]`, `[HttpGet]`, etc., to define routes on action methods.
+
+## Request and Response Formats
+
+### Input Binding
+- Automatically bind request data to action parameters using attributes like `[FromBody]` and `[FromUri]`.
+
+### Output Formatting
+- Response data is automatically serialized to requested format (JSON, XML) based on client's request.
+
+## Error Handling
+
+### Exception Filters
+- Use exception filters to handle exceptions and return meaningful error responses.
+
+## Content Negotiation
+
+### Content-Type Headers
+- Clients can request specific response content types using the `Accept` header.
+
+## Authentication and Authorization
+
+### Authentication
+- Implement authentication using attributes like `[Authorize]`.
+- Use token-based authentication or other authentication methods.
+
+### Authorization
+- Control access to actions using `[Authorize]` with roles or policies.
+
+## Versioning
+
+### API Versioning
+- Handle API versioning using attributes like `[ApiVersion]`.
+
+## Dependency Injection
+
+### DI in Web API
+- Use dependency injection for services within controllers.
+
+## Testing
+
+### Unit Testing
+- Write unit tests for controllers and actions.
+- Use testing frameworks like MSTest or NUnit.
+
+## Best Practices
+
+### Separation of Concerns
+- Keep controllers lightweight; delegate business logic to services.
+
+### Use RESTful Practices
+- Follow REST principles like resource naming and HTTP methods.
+
+### Documentation
+- Document your API using tools like Swagger.
+
+## Conclusion
+
+This worksheet covers the basics of .NET Web API, including creating controllers, handling requests, formatting responses, and more. Use this as a quick reference during your interview preparation!
+
 
  **[⬆ Back to Top](#table-of-contents)**
