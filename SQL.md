@@ -1,5 +1,6 @@
 # SQL Commands and Functions
 
+ **[](#table-of-contents)**
 **Table of Contents**
 - [Database Creation](#database-creation)
 - [Table Creation](#table-creation)
@@ -31,6 +32,8 @@
 - [Schema](#schema)
 - [Alter Table](#alter-table)
 - [Deletion](#deletion)
+
+-  **[](#table-of-contents)**
 
 ## Database Creation
 
