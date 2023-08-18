@@ -110,6 +110,39 @@
   - Counts the total number of animals in the "animals" table.
   - Example: `SELECT COUNT(*) FROM animals;`
  
+  ## Top 10 Commonly Used Aggregate Functions in SQL
+
+1. **COUNT()**: Counts the number of rows in a table that meet a specified condition.
+   Example: `SELECT COUNT(*) FROM employees;`
+
+2. **SUM()**: Calculates the sum of values in a numeric column.
+   Example: `SELECT SUM(salary) FROM employees;`
+
+3. **AVG()**: Computes the average of values in a numeric column.
+   Example: `SELECT AVG(age) FROM students;`
+
+4. **MIN()**: Finds the minimum value in a column.
+   Example: `SELECT MIN(price) FROM products;`
+
+5. **MAX()**: Retrieves the maximum value in a column.
+   Example: `SELECT MAX(score) FROM exams;`
+
+6. **GROUP_CONCAT()**: Concatenates values from multiple rows into a single string, often used with `GROUP BY` clauses.
+   Example: `SELECT department, GROUP_CONCAT(employee_name) FROM employees GROUP BY department;`
+
+7. **FIRST()**: Retrieves the first value in an ordered set of values.
+   Example: `SELECT FIRST_NAME FROM employees ORDER BY hire_date;`
+
+8. **LAST()**: Retrieves the last value in an ordered set of values.
+   Example: `SELECT LAST_NAME FROM employees ORDER BY hire_date;`
+
+9. **VARIANCE()**: Computes the variance of a set of values.
+   Example: `SELECT VARIANCE(sales_amount) FROM transactions;`
+
+10. **STDDEV()**: Calculates the standard deviation of a set of values.
+    Example: `SELECT STDDEV(population) FROM cities;`
+
+ 
     **[⬆ Back to Top](#table-of-contents)**
 
 ## Subqueries
