@@ -43,6 +43,8 @@
 - `CREATE TABLE animals (id INT, name VARCHAR(50));`
   - Creates a table named "animals" with "id" and "name" columns.
   - Example: `CREATE TABLE animals (id INT, name VARCHAR(50));`
+ 
+    **[⬆ Back to Top](#table-of-contents)**
 
 ## Data Manipulation
 
@@ -55,42 +57,57 @@
 - `DELETE FROM animals WHERE name = 'Lion';`
   - Removes rows with "name" value 'Lion' from the "animals" table.
   - Example: `DELETE FROM animals WHERE name = 'Lion';`
+ 
+   **[⬆ Back to Top](#table-of-contents)**
 
 ## Data Querying
 
 - `SELECT name FROM animals WHERE id = 1;`
   - Retrieves the "name" of the animal with "id" 1 from the "animals" table.
   - Example: `SELECT name FROM animals WHERE id = 1;`
+ 
+    **[⬆ Back to Top](#table-of-contents)**
 
 ## Sorting
 
 - `SELECT name FROM animals ORDER BY name ASC;`
   - Retrieves animal names from the "animals" table in ascending alphabetical order.
   - Example: `SELECT name FROM animals ORDER BY name ASC;`
+ 
+   **[⬆ Back to Top](#table-of-contents)**
 
 ## Filtering
 
 - `SELECT name FROM animals WHERE name = 'Tiger';`
   - Retrieves animal names from the "animals" table where "name" is 'Tiger'.
   - Example: `SELECT name FROM animals WHERE name = 'Tiger';`
+ 
+    **[⬆ Back to Top](#table-of-contents)**
 
 ## Joining
 
 - `SELECT a.name, c.class FROM animals a JOIN classes c ON a.id = c.animal_id;`
   - Combines "animals" and "classes" tables based on "id" and "animal_id" columns.
   - Example: `SELECT a.name, c.class FROM animals a JOIN classes c ON a.id = c.animal_id;`
+ 
+  - **[⬆ Back to Top](#table-of-contents)**
 
 ## Grouping
 
 - `SELECT class, COUNT(*) FROM classes GROUP BY class;`
   - Groups classes from the "classes" table and counts occurrences of each class.
   - Example: `SELECT class, COUNT(*) FROM classes GROUP BY class;`
+ 
+    
+  **[⬆ Back to Top](#table-of-contents)**
 
 ## Aggregation
 
 - `SELECT COUNT(*) FROM animals;`
   - Counts the total number of animals in the "animals" table.
   - Example: `SELECT COUNT(*) FROM animals;`
+ 
+    **[⬆ Back to Top](#table-of-contents)**
 
 ## Subqueries
 
@@ -98,11 +115,15 @@
   - Retrieves animal names with "class" 'Mammal' from the "animals" and "classes" tables.
   - Example: `SELECT name FROM animals WHERE id IN (SELECT animal_id FROM classes WHERE class = 'Mammal');`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Alias
 
 - `SELECT name AS animal_name FROM animals;`
   - Retrieves animal names and aliases the "name" column as "animal_name".
   - Example: `SELECT name AS animal_name FROM animals;`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Distinct
 
@@ -110,11 +131,15 @@
   - Retrieves unique class names from the "classes" table.
   - Example: `SELECT DISTINCT class FROM classes;`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Union
 
 - `SELECT name FROM mammals UNION SELECT name FROM reptiles;`
   - Combines unique names from "mammals" and "reptiles" tables.
   - Example: `SELECT name FROM mammals UNION SELECT name FROM reptiles;`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Intersection
 
@@ -122,11 +147,15 @@
   - Retrieves common animal names from "herbivores" and "mammals" tables.
   - Example: `SELECT name FROM herbivores INTERSECT SELECT name FROM mammals;`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Difference
 
 - `SELECT name FROM mammals EXCEPT SELECT name FROM predators;`
   - Retrieves animal names from "mammals" that are not in the "predators" table.
   - Example: `SELECT name FROM mammals EXCEPT SELECT name FROM predators;`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Math Functions
 
@@ -137,11 +166,15 @@
   - Rounds 3.14159 to 2 decimal places.
   - Example: `SELECT ROUND(3.14159, 2);`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## String Functions
 
 - `SELECT CONCAT(column1, column2);`
   - Concatenates two columns or strings.
   - Example: `SELECT CONCAT(first_name, last_name) AS full_name FROM employees;`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Date Functions
 
@@ -149,11 +182,15 @@
   - Extracts the year from a date or timestamp column.
   - Example: `SELECT YEAR(birthdate) FROM employees;`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Logical Operators
 
 - `SELECT name FROM animals WHERE class = 'Mammal' AND age > 5;`
   - Retrieves animal names that are mammals and older than 5 years.
   - Example: `SELECT name FROM animals WHERE class = 'Mammal' AND age > 5;`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## CASE Statement
 
@@ -161,11 +198,15 @@
   - Performs conditional logic to categorize animals as 'Adult' or 'Young' based on age.
   - Example: `SELECT name, CASE WHEN age > 5 THEN 'Adult' ELSE 'Young' END AS age_category FROM animals;`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## NULL Handling
 
 - `SELECT name FROM animals WHERE weight IS NULL;`
   - Retrieves animal names with unknown weight from the "animals" table.
   - Example: `SELECT name FROM animals WHERE weight IS NULL;`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Indexing
 
@@ -173,11 +214,15 @@
   - Creates an index on the "name" column of the "animals" table.
   - Example: `CREATE INDEX idx_name ON animals (name);`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Constraints
 
 - `CREATE TABLE students (id INT PRIMARY KEY, name VARCHAR(50) NOT NULL, age INT CHECK (age >= 18));`
   - Creates a table "students" with a primary key constraint on "id" and a check constraint on "age".
   - Example: `CREATE TABLE students (id INT PRIMARY KEY, name VARCHAR(50) NOT NULL, age INT CHECK (age >= 18));`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Transactions
 
@@ -191,6 +236,8 @@
   - Rolls back a transaction.
   - Example: `ROLLBACK;`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Backup & Restore
 
 - `BACKUP DATABASE zoo TO disk/location;`
@@ -200,11 +247,15 @@
   - Restores the "zoo" database from a backup.
   - Example: `RESTORE DATABASE zoo FROM disk/location;`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Permissions
 
 - `GRANT SELECT ON animals TO user;`
   - Grants SELECT permission on the "animals" table to a user.
   - Example: `GRANT SELECT ON animals TO user;`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## User Management
 
@@ -215,17 +266,23 @@
   - Changes the password of an existing user.
   - Example: `ALTER USER existing_user WITH PASSWORD 'new_password';`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Schema
 
 - `CREATE SCHEMA department;`
   - Creates a new schema named "department".
   - Example: `CREATE SCHEMA department;`
 
+**[⬆ Back to Top](#table-of-contents)**
+
 ## Alter Table
 
 - `ALTER TABLE animals ADD COLUMN color VARCHAR(20);`
   - Adds a new "color" column to the "animals" table.
   - Example: `ALTER TABLE animals ADD COLUMN color VARCHAR(20);`
+
+**[⬆ Back to Top](#table-of-contents)**
 
 ## Deletion
 
@@ -235,3 +292,5 @@
 - `DROP TABLE animals;`
   - Deletes the "animals" table and its data.
   - Example: `DROP TABLE animals;`
+
+**[⬆ Back to Top](#table-of-contents)**
