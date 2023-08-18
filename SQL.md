@@ -1,7 +1,7 @@
 # SQL Commands and Functions
 
- **[](#table-of-contents)**
-**Table of Contents**
+
+## Table of Contents**
 - [Database Creation](#database-creation)
 - [Table Creation](#table-creation)
 - [Data Manipulation](#data-manipulation)
