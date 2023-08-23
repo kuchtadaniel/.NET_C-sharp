@@ -1,6 +1,6 @@
 | Term                      | Description                                         | Example                                        |
 |---------------------------|-----------------------------------------------------|-----------------------------------------------|
-| Array                     | A built-in JavaScript object that stores a collection of values. | ```const numbers = [1, 2, 3, 4, 5];```       |
+| Array                     | A built-in JavaScript object that stores a collection of values. | ``` JavaScript const numbers = [1, 2, 3, 4, 5];```       |
 | Arrow Function            | A concise way to write functions in JavaScript using the => syntax. | ```const add = (a, b) => a + b;```           |
 | Async/Await               | A feature in JavaScript that simplifies working with asynchronous code using keywords async and await. | ```async function fetchData() { ... }```     |
 | Closures                  | A feature in JavaScript where a function remembers the scope in which it was created, even when executed elsewhere. | ```function outer() { ... }```             |
