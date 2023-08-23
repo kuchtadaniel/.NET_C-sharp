@@ -1,35 +1,14 @@
 | Term                      | Description                                         | Example                                        |
 |---------------------------|-----------------------------------------------------|-----------------------------------------------|
-| Array                     | A built-in JavaScript object that stores a collection of values. | `const numbers = [1, 2, 3, 4, 5];`           |
-| Arrow Function            | A concise way to write functions in JavaScript using the => syntax. | `const add = (a, b) => a + b;`               |
-| Async/Await               | A feature in JavaScript that simplifies working with asynchronous code using keywords async and await. | `async function fetchData() { ... }`         |
-| Closures                  | A feature in JavaScript where a function remembers the scope in which it was created, even when executed elsewhere. | `function outer() { ... }`                 |
-| Callback                  | A function passed as an argument to another function to be executed later, often used for asynchronous operations. | `function fetchData(callback) { ... }`     |
-| Classes                   | A blueprint for creating objects in JavaScript, introduced in ECMAScript 2015 (ES6). | `class Person { ... }`                     |
-| Callback Hell             | A situation in JavaScript where nested callbacks create complex and hard-to-read code, often encountered in asynchronous operations. | `getData(function(data) { ... });`        |
-| Destructuring             | A feature in JavaScript that allows you to unpack values from arrays or objects into distinct variables. | `const [a, b, c] = numbers;`               |
-| DOM                       | Document Object Model, a programming interface for web documents that represents the structure of a webpage. | `const element = document.getElementById('myElement');` |
-| ES6 (ECMAScript 2015)     | The sixth version of the ECMAScript standard, introducing significant improvements and new features to JavaScript. | `let greeting = \`Hello, \${name}!\``       |
-| Event                     | An action or occurrence that can be detected and responded to in JavaScript, such as user interactions or system events. | `button.addEventListener('click', () => { ... });` |
-| Function                  | A block of code that can be defined and invoked to perform a specific task in JavaScript. | `function add(a, b) { ... }`               |
-| Generator Function        | A special type of function in JavaScript that can pause and resume its execution, producing an iterator for generating a sequence of values. | `function* generateNumbers() { ... }`      |
-| Hoisting                  | A behavior in JavaScript where variable and function declarations are moved to the top of their containing scope during compilation. | `console.log(x); var x = 5;`               |
-| JSON                      | JavaScript Object Notation, a lightweight data interchange format that is easy for humans to read and write, and easy for machines to parse and generate. | `const person = { ... }`                   |
-| Promise                   | An object representing a value that might be available now, in the future, or never in JavaScript, often used for asynchronous operations. | `const fetchData = () => new Promise((resolve, reject) => { ... });` |
-| Prototype                 | An object that serves as a base for other objects, allowing them to inherit properties and methods in JavaScript. | `function Person(name) { ... }`            |
-| Rest Parameter            | A feature in JavaScript that allows you to gather multiple function arguments into a single array parameter. | `function sum(...numbers) { ... }`         |
-| Spread Operator          | A syntax in JavaScript that allows you to spread elements of an iterable (like an array) into places where multiple elements are expected. | `const newArray = [...array, 4, 5];`       |
-| Template Literal          | A feature in JavaScript that allows you to create strings using backticks (\`) and interpolate variables using \${}. | `const greeting = \`Hello, \${name}!\``     |
-| This                      | A keyword in JavaScript that refers to the current execution context, often used within functions and methods. | `const person = { ... };`                 |
-| Type Coercion             | The automatic conversion of values from one data type to another in JavaScript. | `const sum = 5 + '10'; // '510'`           |
-| typeof                    | An operator in JavaScript used to determine the data type of a value. | `typeof 42; // 'number'`                   |
-| Undefined                 | A value in JavaScript that represents the absence of a value or uninitialized variables. | `let x; console.log(x); // undefined`      |
-| Var                       | A keyword used to declare variables in JavaScript, with function scope or global scope, often leading to unintended issues. | `if (true) { var x = 5; } console.log(x); // 5` |
-| Let                       | A keyword introduced in ES6 to declare variables with block scope in JavaScript. | `if (true) { let x = 5; } console.log(x); // Error: x is not defined` |
-| Const                     | A keyword introduced in ES6 to declare constants with block scope in JavaScript. | `const PI = 3.14159;`                      |
-| IIFE (Immediately Invoked Function Expression) | A design pattern in JavaScript where a function is defined and executed immediately after its creation. | `(function() { ... })();`                  |
-| Module                    | A mechanism in JavaScript to encapsulate code and prevent global namespace pollution, often achieved using the export and import statements. | `export function add(a, b) { ... }`       |
-| Web APIs                  | Interfaces provided by web browsers that allow JavaScript to interact with the browser environment, including DOM manipulation and network requests. | `document.getElementById('myElement').addEventListener('click', () => { ... });` |
-| Fetch API                 | A modern JavaScript API for making network requests, providing a simpler and more flexible alternative to XMLHttpRequest. | `fetch('https://api.example.com/data') ...` |
-| Async Functions           | A feature in JavaScript that simplifies writing asynchronous code by allowing the use of await inside functions marked with the async keyword. | `async function fetchData() { ... }`       |
-
+| Array                     | A built-in JavaScript object that stores a collection of values. | ```const numbers = [1, 2, 3, 4, 5];```       |
+| Arrow Function            | A concise way to write functions in JavaScript using the => syntax. | ```const add = (a, b) => a + b;```           |
+| Async/Await               | A feature in JavaScript that simplifies working with asynchronous code using keywords async and await. | ```async function fetchData() { ... }```     |
+| Closures                  | A feature in JavaScript where a function remembers the scope in which it was created, even when executed elsewhere. | ```function outer() { ... }```             |
+| Callback                  | A function passed as an argument to another function to be executed later, often used for asynchronous operations. | ```function fetchData(callback) { ... }``` |
+| Classes                   | A blueprint for creating objects in JavaScript, introduced in ECMAScript 2015 (ES6). | ```class Person { ... }```                 |
+| Callback Hell             | A situation in JavaScript where nested callbacks create complex and hard-to-read code, often encountered in asynchronous operations. | ```getData(function(data) { ... });```    |
+| Destructuring             | A feature in JavaScript that allows you to unpack values from arrays or objects into distinct variables. | ```const [a, b, c] = numbers;```           |
+| DOM                       | Document Object Model, a programming interface for web documents that represents the structure of a webpage. | ```const element = document.getElementById('myElement');``` |
+| ES6 (ECMAScript 2015)     | The sixth version of the ECMAScript standard, introducing significant improvements and new features to JavaScript. | ```let greeting = `Hello, ${name}!`;```   |
+| ...                       | ...                                                 | ...                                           |
+| Async Functions           | A feature in JavaScript that simplifies writing asynchronous code by allowing the use of await inside functions marked with the async keyword. | ```async function fetchData() { ... }```  |
