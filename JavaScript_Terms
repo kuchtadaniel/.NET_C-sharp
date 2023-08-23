@@ -1,6 +1,6 @@
-Here is the JavaScript terms table converted to Markdown format with JavaScript syntax highlighting for the code snippets:
 
-```md
+
+```markdown
 | Term | Description | Example |
 |-|-|-|
 | Array | A built-in JavaScript object that stores a collection of values. | `const numbers = [1, 2, 3, 4, 5];` |
