@@ -1,14 +1,14 @@
-| Term                      | Description                                         | Example                                        |
-|---------------------------|-----------------------------------------------------|-----------------------------------------------|
+| Term                      | Description                                         | Example                                         |
+|---------------------------|-----------------------------------------------------|-------------------------------------------------|
 | Array                     | A built-in JavaScript object that stores a collection of values. | ```javascript const numbers = [1, 2, 3, 4, 5];```       |
-| Arrow Function            | A concise way to write functions in JavaScript using the => syntax. | ```const add = (a, b) => a + b;```           |
-| Async/Await               | A feature in JavaScript that simplifies working with asynchronous code using keywords async and await. | ```async function fetchData() { ... }```     |
-| Closures                  | A feature in JavaScript where a function remembers the scope in which it was created, even when executed elsewhere. | ```function outer() { ... }```             |
-| Callback                  | A function passed as an argument to another function to be executed later, often used for asynchronous operations. | ```function fetchData(callback) { ... }``` |
-| Classes                   | A blueprint for creating objects in JavaScript, introduced in ECMAScript 2015 (ES6). | ```class Person { ... }```                 |
-| Callback Hell             | A situation in JavaScript where nested callbacks create complex and hard-to-read code, often encountered in asynchronous operations. | ```getData(function(data) { ... });```    |
-| Destructuring             | A feature in JavaScript that allows you to unpack values from arrays or objects into distinct variables. | ```const [a, b, c] = numbers;```           |
-| DOM                       | Document Object Model, a programming interface for web documents that represents the structure of a webpage. | ```const element = document.getElementById('myElement');``` |
-| ES6 (ECMAScript 2015)     | The sixth version of the ECMAScript standard, introducing significant improvements and new features to JavaScript. | ```let greeting = `Hello, ${name}!`;```   |
-| ...                       | ...                                                 | ...                                           |
-| Async Functions           | A feature in JavaScript that simplifies writing asynchronous code by allowing the use of await inside functions marked with the async keyword. | ```async function fetchData() { ... }```  |
+| Arrow Function            | A concise way to write functions in JavaScript using the => syntax. | ```javascript const add = (a, b) => a + b;```           |
+| Async/Await               | A feature in JavaScript that simplifies working with asynchronous code using keywords async and await. | ```javascript async function fetchData() { ... }```     |
+| Closures                  | A feature in JavaScript where a function remembers the scope in which it was created, even when executed elsewhere. | ```javascript function outer() { ... }```             |
+| Callback                  | A function passed as an argument to another function to be executed later, often used for asynchronous operations. | ```javascript function fetchData(callback) { ... }``` |
+| Classes                   | A blueprint for creating objects in JavaScript, introduced in ECMAScript 2015 (ES6). | ```javascript class Person { ... }```                 |
+| Callback Hell             | A situation in JavaScript where nested callbacks create complex and hard-to-read code, often encountered in asynchronous operations. | ```javascript getData(function(data) { ... });```    |
+| Destructuring             | A feature in JavaScript that allows you to unpack values from arrays or objects into distinct variables. | ```javascript const [a, b, c] = numbers;```           |
+| DOM                       | Document Object Model, a programming interface for web documents that represents the structure of a webpage. | ```javascript const element = document.getElementById('myElement');``` |
+| ES6 (ECMAScript 2015)     | The sixth version of the ECMAScript standard, introducing significant improvements and new features to JavaScript. | ```javascript let greeting = `Hello, ${name}!`;```   |
+| ...                       | ...                                                 | ...                                             |
+| Async Functions           | A feature in JavaScript that simplifies writing asynchronous code by allowing the use of await inside functions marked with the async keyword. | ```javascript async function fetchData() { ... }```  |
