@@ -2,7 +2,7 @@
 
 ```markdown
 | Term | Description | Example |
-|-|-|-|
+|-----------------------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------|
 | Array | A built-in JavaScript object that stores a collection of values. | `const numbers = [1, 2, 3, 4, 5];` |
 | Arrow Function | A concise way to write functions in JavaScript using the => syntax. | `const add = (a, b) => a + b;` |
 | Async/Await | A feature in JavaScript that simplifies working with asynchronous code using keywords async and await. | ```js async function fetchData() { const response = await fetch('https://api.example.com/data'); const data = await response.json(); return data; }``` |
