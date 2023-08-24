@@ -12,6 +12,28 @@
 
   **[](#table-of-contents)**
 
+
+  Authentication and Authorization:
+
+Authentication is not commonly used. We utilized internal authentication and had a dedicated team working on authentication solutions.
+However, we heavily rely on authorization policies to control access to various parts of the system.
+External User Authentication:
+
+For authenticating external users, we leverage Active Directory, ensuring secure access for external parties.
+Invitation-Based User Registration:
+
+In this scenario, an existing user or administrator sends an invitation to a new user to join a system or application.
+The invitation typically includes a personalized link, enabling the new user to sign up, set a password, and complete necessary authorization steps.
+This method ensures controlled onboarding of new users while providing required access and authorization.
+Account Activation and Confirmation:
+
+We incorporate account activation and confirmation mechanisms to enhance security and user validation.
+Web APIs:
+
+For web APIs, we implemented a newsletter feature using Dapper, which offers a simpler approach compared to our previous use of ADO.NET.
+Dapper's simplicity and smaller learning curve made it a preferable choice for this task.
+
+
 ## Authentication
 Authentication is the process of verifying the identity of a user. In this example, we'll use a simple username-password authentication approach.
 
@@ -226,6 +248,25 @@ Load balancing distributes incoming network traffic across multiple servers to e
 - Round Robin: Distributes requests sequentially to servers.
 - Least Connections: Routes to the server with the fewest active connections.
 - Weighted Round Robin: Assigns weights to servers based on their capacity.
+
+  #####Load Balancing Strategies
+High Availability
+Scalability
+Performance Optimization
+Global Load Balancing
+Health Checks and Monitoring
+Session Persistence (Sticky Sessions)
+Content Delivery Networks (CDNs)
+Caching Mechanisms
+Security Considerations
+DDoS Protection
+SSL/TLS Certificates
+Load Testing
+Load Balancer Vendors
+Troubleshooting and Diagnostics
+Documentation
+Collaboration with DevOps and Network Teams
+Continuous Improvement
 
 ## Caching Strategies
 
