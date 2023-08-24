@@ -201,19 +201,19 @@ In summary, JSON is a popular format for sharing and storing data in web develop
 - Control access to actions using `[Authorize]` with roles or policies.
 
 ## Versioning
-URL Versioning: In this approach, the API version is included in the URL, such as https://api.example.com/v1/resource. It's straightforward but can clutter URLs.
+-URL Versioning: In this approach, the API version is included in the URL, such as https://api.example.com/v1/resource. It's straightforward but can clutter URLs.
 
-Header Versioning: The version information is passed in an HTTP header, like Accept-Version: v1. This keeps the URL cleaner but requires clients to include the header.
+-Header Versioning: The version information is passed in an HTTP header, like Accept-Version: v1. This keeps the URL cleaner but requires clients to include the header.
 
-Media Type Versioning (Accept Header): Different versions are represented by distinct media types in the Accept header. For example, Accept: application/vnd.myapi.v1+json.
+-Media Type Versioning (Accept Header): Different versions are represented by distinct media types in the Accept header. For example, Accept: application/vnd.myapi.v1+json.
 
-Custom Header: You can define a custom header like X-API-Version: v1. This provides flexibility but requires clients to understand the custom header.
+-Custom Header: You can define a custom header like X-API-Version: v1. This provides flexibility but requires clients to understand the custom header.
 
-Query Parameter: Versioning is indicated in the query parameter, such as https://api.example.com/resource?v=1.
+-Query Parameter: Versioning is indicated in the query parameter, such as https://api.example.com/resource?v=1.
 
-Namespace Versioning: The version is included as part of the namespace in the code structure, like namespace V1.Controllers.
+-Namespace Versioning: The version is included as part of the namespace in the code structure, like namespace V1.Controllers.
 
-Choosing the right versioning approach depends on f
+
 
 ### API Versioning
 - Handle API versioning using attributes like `[ApiVersion]`.
